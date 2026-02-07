@@ -1,6 +1,8 @@
 // COMSC-210 | Lab 4A | Christine Susic
 
 #include <iostream>
+#include <cmath>
+#include <iomanip>
 #include <vector>
 using namespace std;
 
@@ -11,8 +13,16 @@ struct Color {
     int blue;
 };
 
+const int MIN = 25, MAX = 50; //range of 25-50
+
 int main() {
+    srand(time(0));
     vector<Color> colorList;
+    
+    Color c = {45, 23, 78};
+    cout << c.red << "\n";
+    cout << c.green << "\n";
+    cout << c.blue << "\n";
     
     //Color c;
     //c.red = (9);
@@ -25,16 +35,6 @@ int main() {
         myVec.push_back(i);
     for (int val : myVec) cout << val << " ";
     cout << endl << endl;*/
-
-    
-    Color c = {45, 23, 78};
-    cout << c.red << "\n";
-    cout << c.green << "\n";
-    cout << c.blue << "\n";
-    
-    /*for (int i = 0; i < storeColors.size(); i++) {
-        cout << storeColors[i] << " ";
-    }*/
     
     return 0;
 }
