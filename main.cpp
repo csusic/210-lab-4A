@@ -37,13 +37,15 @@ int main() {
     cout << setw(W1) << left << "------";
     cout << setw(W2) << "-------";
     cout << setw(W3) << "-------";
-    cout << setw(W4) << "-------";
+    cout << setw(W4) << "-------" << endl;
          
-    cout << setw(W1) << left <<  c.red;
-    cout << setw(W2) << c.red;
-    cout << setw(W3) << c.green;
-    cout << setw(W4) << c.blue;
-    cout << endl;
+    for (int i = 0; i < 10; i++) {
+        cout << setw(W1) << left <<  c.red;
+        cout << setw(W2) << c.red;
+        cout << setw(W3) << c.green;
+        cout << setw(W4) << c.blue;
+        cout << endl;
+    }
     //cout << n;
     
     
