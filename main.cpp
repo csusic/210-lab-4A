@@ -26,7 +26,6 @@ int main() {
     n = rand() % (MAX - MIN + 1) + MIN;
     
     vector<Color> colorList;
-    vector<int> myVec;
     
     //output
     cout << left;
@@ -38,10 +37,6 @@ int main() {
     cout << setw(W1) << "-------";
     cout << setw(W1) << "-------";
     cout << setw(W1) << "-------" << endl;
-    
-    /*for (int i = 0; i < 5; i++)
-        myVec.push_back(i);
-    for (int val : myVec) cout << val << " ";*/
          
     for (int i = 0; i < n; i++) {
         colorNum++; //counter
@@ -55,6 +50,7 @@ int main() {
         cout << setw(W1) << t.green;
         cout << setw(W1) << t.blue;
         cout << endl; 
+        colorList.push_back({n1, n2, n3}); //push struct
     }
     
     return 0;
