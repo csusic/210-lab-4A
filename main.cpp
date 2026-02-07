@@ -12,11 +12,9 @@ struct Color {
 };
 
 int main() {
-    vector<Color> colorList;
-    
-    Color c;
-    c.red = (9);
-    cout << c.red; 
+    //Color c;
+    //c.red = (9);
+    //cout << c.red; 
     
     //fot (int i : v) 
         //cout << i << " ";
@@ -27,10 +25,10 @@ int main() {
     cout << endl << endl;*/
 
     
-    /*Color c = {45, 23, 78};
+    Color c = {45, 23, 78};
     cout << c.red << "\n";
     cout << c.green << "\n";
-    cout << c.blue << "\n";*/
+    cout << c.blue << "\n";
     
     /*for (int i = 0; i < storeColors.size(); i++) {
         cout << storeColors[i] << " ";
