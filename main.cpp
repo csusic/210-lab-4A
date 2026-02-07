@@ -14,9 +14,10 @@ struct Color {
 };
 
 //set precision, column widths
-const int PREC = 2, W1 = 10, W2 = 10; 
+const int PREC = 2;
+const int W1 = 10, W2 = 10, W3 = 10, W4 = 10; 
 //range of 25-50
-const int MIN = 25, MAX = 50;
+const int MIN = 25, MAX = 50; 
 
 int main() {
     cout << fixed << setprecision(PREC);
@@ -29,17 +30,21 @@ int main() {
     
     Color c = {45, 23, 78};
     cout << left;
-    cout << setw(W1) << "Color #: " 
-    cout << setw(W2) << "R value: " 
-    cout << setw(W3) << "G value: " 
-    cout << setw(W4) << "B value: " 
-
+    cout << setw(W1) << left << "Color # ";
+    cout << setw(W2) << "R value ";
+    cout << setw(W3) << "G value "; 
+    cout << setw(W4) << "B value " << endl;
+    cout << setw(W1) << left << "------";
+    cout << setw(W2) << "-------";
+    cout << setw(W3) << "-------";
+    cout << setw(W4) << "-------";
          
-    << setw(W1) << i << endl;
-    << setw(W2) << c.red << endl;
-    << setw(W3) << c.green << endl;
-    << setw(W4) << c.blue << endl;
-    cout << n;
+    cout << setw(W1) << left <<  c.red;
+    cout << setw(W2) << c.red;
+    cout << setw(W3) << c.green;
+    cout << setw(W4) << c.blue;
+    cout << endl;
+    //cout << n;
     
     
     /*colorList.push_back(9);
