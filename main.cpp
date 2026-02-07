@@ -12,6 +12,8 @@ struct Color {
 };
 
 int main() {
+    vector<Color> colorList;
+    
     //Color c;
     //c.red = (9);
     //cout << c.red; 
