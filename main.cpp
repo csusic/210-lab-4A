@@ -13,14 +13,13 @@ struct Color {
     int blue;
 };
 
-//set precision, column widths
-const int PREC = 2;
-const int W1 = 10, W2 = 10, W3 = 10, W4 = 10; 
+//set column widths
+const int W1 = 10;
 //range of 25-50
 const int MIN = 25, MAX = 50; 
 
 int main() {
-    cout << fixed << setprecision(PREC);
+    int colorNum = 0; //counter
     //random number
     int n; 
     srand(time(0));
@@ -28,26 +27,25 @@ int main() {
     
     vector<Color> colorList;
     
-    Color c = {45, 23, 78};
     cout << left;
     cout << setw(W1) << left << "Color # ";
-    cout << setw(W2) << "R value ";
-    cout << setw(W3) << "G value "; 
-    cout << setw(W4) << "B value " << endl;
-    cout << setw(W1) << left << "------";
-    cout << setw(W2) << "-------";
-    cout << setw(W3) << "-------";
-    cout << setw(W4) << "-------" << endl;
+    cout << setw(W1) << "R value ";
+    cout << setw(W1) << "G value "; 
+    cout << setw(W1) << "B value " << endl;
+    cout << setw(W1) << left << "-------";
+    cout << setw(W1) << "-------";
+    cout << setw(W1) << "-------";
+    cout << setw(W1) << "-------" << endl;
          
-    for (int i = 0; i < 10; i++) {
-        cout << setw(W1) << left <<  c.red;
-        cout << setw(W2) << c.red;
-        cout << setw(W3) << c.green;
-        cout << setw(W4) << c.blue;
+    for (int i = 0; i < n; i++) {
+        colorNum++; //counter
+        Color t = {n, n, n}; //temporary struct
+        cout << setw(W1) << left <<  colorNum;
+        cout << setw(W1) << t.red;
+        cout << setw(W1) << t.green;
+        cout << setw(W1) << t.blue;
         cout << endl;
     }
-    //cout << n;
-    
     
     /*colorList.push_back(9);
     //cout << 
